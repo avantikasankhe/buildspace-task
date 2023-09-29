@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+        <header> 
+            <div class="toggle">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle"></label>
+            </div>
+            <div class="menu">
+            <ul>
+                <li> <a href="#">Gmail</a></li>
+                <li> <a href="#">Images</a></li>
+                <li> <a href="#"><img src="./bars.png"></a></li>
+                <li><button>Sign In</button></li>
+            </ul>
+        </div>
+        </header>
+        
+        
+        <div class="main">
+            <img id="logo" src="./google.webp">
+        <div class="searchbox">
+        
+            <input type="text" class="search" placeholder="Search Google or type a URL">
+            <div class="icons">
+                <div><img src="./search.jpeg"></div>
+                <div class="mic"><img src="./mic.jpeg"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button>Google Search</button>
+            <button>I'm Feeling Lucky</button>
+        </div>
+        <ul class="languages">
+            <li>Google offered in:</li>
+            <li><a href="#">हिन्दी</a></li>
+            <li><a href="#">বাংলা</a></li>
+            <li><a href="#">తెలుగు</a></li>
+            <li><a href="#">मराठी</a></li>
+            <li><a href="#">தமிழ்</a></li>
+            <li><a href="#">ગુજરાતી</a></li>
+            <li><a href="#">ಕನ್ನಡ</a></li>
+            <li><a href="#">മലയാളം</a></li>
+            <li><a href="#">ਪੰਜਾਬੀ</a></li>
+        </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="button">
+        <button class="pen" >
+        <div><img src="./pen.jpeg" alt="image"></div>
+            <span>Customize Chrome</span>
+        </button> </div>
+            <div class="row1">
+                <p class="country">India</p>
+            </div>
+            <div class="row2">
+                <ul class="left">
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How Search works</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+    </footer>
+    <script>const toggle = document.getElementById('toggle');
+        const body = document.body;
+        
+        toggle.addEventListener('input', (e) => {
+            const isChecked = e.target.checked;
+            
+            if(isChecked) {
+                body.classList.add('dark-theme');
+            } else {
+                body.classList.remove('dark-theme');
+            }
+        });</script>
+</body>
+</html>
